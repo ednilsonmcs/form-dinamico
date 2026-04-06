@@ -1,0 +1,12 @@
+name: My frist workflow
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+  workflow_dispatch: 
+jobs:
+  steps:
+  - name: Run a simple job
+    run: |
+      echo Hello, world
